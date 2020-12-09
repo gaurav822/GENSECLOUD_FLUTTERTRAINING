@@ -1,0 +1,16 @@
+How to Connect wirelessly to install App
+(For Flutter or Android Studio)
+
+Needs to be connected in same wifi network.
+
+First time needed to connected with USB Cable.
+
+Later on app can be installed wirelessly.
+
+Steps:
+
+1)adb devices
+
+2)adb tcpip 9999
+
+3)adb connect ipaddress:9999
