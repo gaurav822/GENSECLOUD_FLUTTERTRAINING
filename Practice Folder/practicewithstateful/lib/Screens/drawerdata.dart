@@ -6,6 +6,9 @@ class DrawerData extends StatefulWidget {
 }
 
 class _DrawerDataState extends State<DrawerData> {
+  bool checkbox=false;
+  bool radioValue=false;
+  double sliderValue=0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,6 +39,27 @@ class _DrawerDataState extends State<DrawerData> {
             ],
           ),
 
+
+          Radio(
+            value: radioValue,
+            groupValue: true,
+            onChanged: (value){
+              setState(() {
+                radioValue=value;
+              });
+            },
+          ),
+
+
+          Slider(
+            value: sliderValue, 
+            onChanged: (value){
+              setState(() {
+                sliderValue=value;
+              });
+            }
+            )
+
           
           
           
@@ -49,9 +73,9 @@ class _DrawerDataState extends State<DrawerData> {
     return Checkbox(
             value: checkbox, 
             onChanged: (value){
-              value=checkbox;
+              
               setState(() {
-                
+                checkbox=value;
               });
 
             });
