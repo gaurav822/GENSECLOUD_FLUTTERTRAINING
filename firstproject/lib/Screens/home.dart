@@ -48,6 +48,7 @@ class HomePage extends StatelessWidget {  //HomePage is Separate Widget now
           onPressed: (){},
           child: Text("Flat button"),
           color: Colors.red,
+    
         ),
         Image.network("", height: 50, width: 50,),
 

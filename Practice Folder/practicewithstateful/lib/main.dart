@@ -1,11 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:practice1/Screens/home.dart';
-
+import 'package:practicewithstateful/Screens/stateful.dart';
 
 void main(){
   runApp(MaterialApp(
-    home: MyHomePage(),
+    home: MyStatefulWidget() ,
     debugShowCheckedModeBanner: false,
   ));
 }
