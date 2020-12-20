@@ -11,7 +11,5 @@ class JsonPlaceHolderModel{
     this.id,
     this.userId
   });
-  
-   
 
 }
