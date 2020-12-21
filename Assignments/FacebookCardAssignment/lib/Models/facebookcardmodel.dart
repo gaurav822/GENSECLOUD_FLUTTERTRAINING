@@ -6,6 +6,8 @@ class FacebookCardModel{
 
   String postImgLink;
 
+  String postStatus;
+
   int reacts,cmnts,shares;
 
   FacebookCardModel({
@@ -17,6 +19,7 @@ class FacebookCardModel{
     this.cmnts,
     this.shares,
     this.userImgLink,
-    this.postImgLink
+    this.postImgLink,
+    this.postStatus
   });
 }

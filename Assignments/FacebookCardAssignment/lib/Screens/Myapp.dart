@@ -82,6 +82,7 @@ class _MyFacebookAppState extends State<MyFacebookApp> {
          cmnts: 100,
          date: 'Aug 26',
          shares: 20,
+         postStatus: "updated their cover photo",
          reacts: 150,
          userImgLink: "https://i.pinimg.com/originals/c0/5b/41/c05b414d77a20762fede5eeed699605f.png",
          postImgLink: "https://static4.businessinsider.com/image/5ae2452f19ee8635008b45af-1500/puppy-dog-pet.jpg"
@@ -96,6 +97,7 @@ class _MyFacebookAppState extends State<MyFacebookApp> {
          shares: 250,
          date: 'Jan 11',
          reacts: 500,
+         postStatus: "is feeling happy",
          userImgLink: "https://pbs.twimg.com/profile_images/619472491807838208/F70N-pvJ_400x400.jpg",
          postImgLink: "https://i.ytimg.com/vi/fq4N0hgOWzU/maxresdefault.jpg"
          
@@ -108,6 +110,7 @@ class _MyFacebookAppState extends State<MyFacebookApp> {
          shares: 15,
          postdetails: "#Memory",
          date: 'July 15',
+         postStatus: "updated his status",
          reacts: 4000,
          userImgLink: "https://myrepublica.nagariknetwork.com/uploads/media/RajeshHamal.jpg",
          postImgLink: "https://nepally.com/wp-content/uploads/2017/11/rajesh.jpg"
@@ -120,6 +123,7 @@ class _MyFacebookAppState extends State<MyFacebookApp> {
          date: 'Feb 2',
          postdetails: "#Cricket",
          reacts: 100,
+         postStatus: "updated his profile picture",
          userImgLink: "https://c.ndtvimg.com/2020-07/m7opt04g_ms-dhoni-afp_625x300_06_July_20.jpg",
          postImgLink: "https://cdn.wionews.com/sites/default/files/styles/story_page/public/2019/06/04/97264-untitled-design-71.jpg"
 
@@ -131,6 +135,7 @@ class _MyFacebookAppState extends State<MyFacebookApp> {
          postdetails: "#E-learning",
          reacts: 1000,
          date: 'Sept 26',
+         postStatus: "",
          userImgLink: "https://media-exp1.licdn.com/dms/image/C510BAQEKVfCf70fN6A/company-logo_200_200/0?e=2159024400&v=beta&t=bhzBEbpaYQPVQg6pbU-ufEb4Hv8ciLNCsAD31WmzvaY",
          postImgLink: "https://www.genesecloud.academy/wp-content/uploads/2020/10/cloud-practitionerv3-1080x675.png",
        );
@@ -141,6 +146,7 @@ class _MyFacebookAppState extends State<MyFacebookApp> {
          postdetails: "Now Esewa integration on Viber",
          reacts: 340,
          date: 'Jan 11',
+         postStatus: "updated their status",
          userImgLink: "https://www.clipartmax.com/png/middle/87-872578_viber-icon-transparent-png.png",
          postImgLink: "https://blog.esewa.com.np/wp-content/uploads/2020/12/viber.jpg"
        );
@@ -151,6 +157,7 @@ class _MyFacebookAppState extends State<MyFacebookApp> {
          reacts: 600,
          shares: 100,
          date: 'Dec 25',
+         postStatus: "updated their status",
          userImgLink: "https://png.pngtree.com/png-clipart/20190516/original/pngtree-whatsapp-icon-png-image_3584845.jpg",
          postImgLink: "https://i0.wp.com/technosports.co.in/wp-content/uploads/2020/11/How-to-use-WhatsApp-Pay-in-India_TechnoSports.co_.in_.jpg?fit=1280%2C720&ssl=1"
        );
@@ -161,8 +168,9 @@ class _MyFacebookAppState extends State<MyFacebookApp> {
          shares: 14,
          reacts: 600,
          date: 'March 30',
+         postStatus: "is sharing his memory",
          userImgLink: "https://banner2.cleanpng.com/20171217/f34/mark-zuckerberg-png-5a36aa59e3dff2.3813043015135319939334.jpg",
-         postImgLink: "https://lh3.googleusercontent.com/proxy/dWUyDR6zaaGFNGH_Ru8lI0GpK9txeWr7jRxlEAC50BU2SEw6rQviY_kpCPePKtjthngyAJZ_-DpRc471LJxl4UucBSCfcHDbGzwatZs2-FvPM-PxXwYAmWhfPRwu7mKoQCswk9w"
+         postImgLink: "https://www.freeiconspng.com/uploads/facebook-founder-mark-zuckerberg-27.png"
        );
        FacebookCardModel model9 = FacebookCardModel(
          fbname: 'Elon Musk',
@@ -171,6 +179,7 @@ class _MyFacebookAppState extends State<MyFacebookApp> {
          postdetails: "#SpaceX",
          reacts: 800,
          date: 'April 19',
+         postStatus: "updated his cover picture",
          userImgLink: "https://www.nicepng.com/png/detail/198-1986851_elon-musk-elon-musk-a-biography-of-business.png",
          postImgLink: "https://static.seekingalpha.com/uploads/2018/8/26/47444632-15353371925506494_origin.jpg"
        );
@@ -181,6 +190,7 @@ class _MyFacebookAppState extends State<MyFacebookApp> {
          shares: 350,
          reacts: 670,
          date: 'May 19',
+         postStatus: "posted a status message",
         userImgLink: "https://cdn.countryflags.com/thumbs/nepal/flag-waving-250.png",
         postImgLink: "https://wallpaperaccess.com/full/166015.jpg"
        );
@@ -349,12 +359,15 @@ class _MyFacebookAppState extends State<MyFacebookApp> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Text('updated their cover photo',style: TextStyle(color: Colors.black45,fontSize: 12),),
+                          child: Text(fbmodel.postStatus,style: TextStyle(color: Colors.black45,fontSize: 12),),
                         ),
 
                         new Spacer(), // to provide space as needed
                         
-                        Icon(Icons.more_horiz)
+                        Padding(
+                          padding: const EdgeInsets.all(4.0),
+                          child: Icon(Icons.more_horiz),
+                        )
                         
                       ],
                     );
@@ -365,19 +378,43 @@ class _MyFacebookAppState extends State<MyFacebookApp> {
     return Row(
 
                       children: [
+                        
 
-                        Image.network("https://i.pinimg.com/originals/39/44/6c/39446caa52f53369b92bc97253d2b2f1.png",
-                         width:40,
-                         height:30,
-                         ),
+                        Row(        
+        
+                        children: [
 
-                         Image.network("https://png.pngtree.com/element_our/md/20180626/md_5b321ca7a1ca4.jpg",
-                         width:40,
-                         height:30,
+                       
+                          Image.network("https://i.pinimg.com/originals/39/44/6c/39446caa52f53369b92bc97253d2b2f1.png",
+                           width:30,
+                           height:30,
+                       
+                           
+                           ),
+                        
+
+                         Image.network("https://www.citypng.com/public/uploads/small/115919156614d7ckrffvgqldmxwtrqgk92r7s3ljmur1men5mqfwbabv4hwbmwa68hpw89m5iviqk9xuhgaiu83olruujjske0nbkagm9z92ujl.png",
+                           width:23,
+                           height:23,
+                           
+                           
+                           ),
                          
-                         ),
+
+                          Image.network("https://www.clipartkey.com/mpngs/m/111-1110687_facebook-wow-emoticon-icon-wow-reaction-transparent-background.png",
+                           width:28,
+                           height:20,
+                           
+                           
+                           ),
+                         
 
                          Text(fbmodel.reacts.toString()),
+
+                          ],
+                        ),
+
+                      
 
                          SizedBox(
 
