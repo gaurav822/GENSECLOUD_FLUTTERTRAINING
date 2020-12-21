@@ -17,7 +17,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## SCREENRECORD YOUTUBE LINK
 
-[![Facebook Card Assignment](https://img.youtube.com/vi//0.jpg)](https://www.youtube.com/watch?v=1c2GxujCOcg)
+[![](https://img.youtube.com/vi/1c2GxujCOcg/0.jpg)](https://www.youtube.com/watch?v=1c2GxujCOcg)
 
 ## SCREENSHOTS
 
