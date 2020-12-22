@@ -31,7 +31,6 @@ class CounterController extends GetxController {
     double width=Get.width;
 
     return Size(width,height);
-
     
   }
 
