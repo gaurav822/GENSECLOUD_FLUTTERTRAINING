@@ -1,0 +1,12 @@
+Topics covered:
+
+Proper Facebook Card Design
+Tabbar
+BottomNavigationbar
+Refresh Indicator
+Orientation(landscape & portrait)
+Transform.scale,Transform.rotate()
+Passing Paramter from Constructor to next Screen
+
+
+Meeting Link: 
