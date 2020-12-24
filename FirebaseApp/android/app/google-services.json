@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "647131542998",
+    "project_id": "gcaflutter",
+    "storage_bucket": "gcaflutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647131542998:android:320cc99b07f33ffd662077",
+        "android_client_info": {
+          "package_name": "com.example.FirebaseApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647131542998-81048eu7nqtm8a7od8ce49ccgn7lk7cr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8g_vVxZMYpdteS7k--Ck2_bDWLvsWUho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647131542998-81048eu7nqtm8a7od8ce49ccgn7lk7cr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
