@@ -15,7 +15,7 @@ class _DataListState extends State<DataList> {
     
     return Ink(
       color: Colors.amber,
-          child: SizedBox(
+        child: SizedBox(
 
         width: Get.width,
         
@@ -33,8 +33,6 @@ class _DataListState extends State<DataList> {
                       Divider(),
                       Text(qdocsnap[index].data().toString())
                       ]);
-                    
-
                     
                 },
               );
