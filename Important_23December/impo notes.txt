@@ -10,3 +10,10 @@ Passing Paramter from Constructor to next Screen
 
 
 Meeting Link: 
+
+
+
+
+Suppose you are want to refresh content using RefreshIndicator;
+
+THen wrap the content for example ListView with RefreshIndicator and make sure to call onRefresh function
