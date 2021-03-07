@@ -19,19 +19,44 @@ class _StatefulAppState extends State<StatefulApp> {
           child: Text('$_counter',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),),
       ),
 
-      floatingActionButton: FloatingActionButton(
-
-        child: Icon(Icons.add),
-        onPressed: (){
-
-          _counter++;
-          setState(() {
-            
-          });
-
-        },
-      ),
+      floatingActionButton: buttons(),
       
     );
+  }
+
+  Widget buttons(){
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        _fab(Icon(Icons.favorite), _increament),
+        _fab(Icon(Icons.thumb_down), _decreament)
+      ],
+    );
+  }
+
+  Widget _fab(Widget widget, Function onPressed){
+
+    return FloatingActionButton(
+      onPressed: (){
+        onPressed();
+      },
+
+      child: widget,
+
+      );
+  }
+
+  _increament(){
+    _counter++;
+    setState(() {
+      
+    });
+  }
+
+  _decreament(){
+    _counter--;
+    setState(() {
+    });
   }
 }
